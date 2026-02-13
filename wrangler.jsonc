@@ -1,4 +1,4 @@
-name = "my-first-cloudflare-site/production"  # Change to match your Pages/Workers project name (from dashboard URL, e.g. my-first-cloudflare-site)
+name = my-first-cloudflare-site/production  # Change to match your Pages/Workers project name (from dashboard URL, e.g. my-first-cloudflare-site)
 compatibility_date = "2026-02-13"  # Or today's date-ish; use a recent one
 
 # No main script → pure static
