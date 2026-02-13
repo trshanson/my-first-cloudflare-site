@@ -1,4 +1,4 @@
-name = my-first-cloudflare-site
+name = my-first-cloudflare-site/production
 compatibility_date = "2026-02-13"
 
 assets = { directory = "./" }
