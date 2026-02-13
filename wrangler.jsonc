@@ -1,12 +1,6 @@
-name = my-first-cloudflare-site # Change to match your Pages/Workers project name (from dashboard URL, e.g. my-first-cloudflare-site)
-compatibility_date = "2026-02-13"  # Or today's date-ish; use a recent one
+name = "my-first-cloudflare-site"
+compatibility_date = "2026-02-13"
 
-# No main script → pure static
-# Assets config: serve everything from repo root
 assets = { directory = "./" }
 
-# Optional but recommended for clean behavior
-workers_dev = false          # Disable *.workers.dev preview if unwanted
-preview_urls = false         # No auto preview branches
-
-# If you ever add Functions later, you can expand here
+preview_urls = false
