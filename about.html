@@ -5,12 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | The Providers Playbook</title>
   <style>
-    /* Copy the entire <style> block from index.html here so it looks the same */
-    /* Paste the :root, body, a, header, etc. styles from your index.html */
+    :root {
+      --primary: #28a745;      /* Blue accent */
+      --text: #333;
+      --light-bg: #f9fbfd;
+      --border: #e0e7ff;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacOSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--light-bg);
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 5%;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 1.5rem; font-weight: bold; }
+    nav a { margin-left: 1.5rem; font-weight: 500; }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 5% 4rem;
+      background: linear-gradient(to bottom, white, var(--light-bg));
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0 0 1rem;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .btn:hover { background: #0052a3; text-decoration: none; }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 5%;
+    }
+
+    .posts {
+      margin: 4rem 0;
+    }
+    .post-teaser {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .post-teaser h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+    .date { color: #777; font-size: 0.95rem; }
+
+    .newsletter {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 3rem;
+      text-align: center;
+      margin: 4rem 0;
+    }
+    .newsletter h2 { margin-top: 0; }
+
+    footer {
+      text-align: center;
+      padding: 3rem 5%;
+      background: white;
+      border-top: 1px solid var(--border);
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.4rem; }
+      .nav { flex-direction: column; gap: 1rem; }
+      nav a { margin: 0 1rem; }
+    }
   </style>
 </head>
 <body>
-  <!-- Copy the <header> from index.html here for the nav bar -->
+  <header>
+    <div class="nav">
+      <div class="logo">The Providers Playbook</div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/archive.html">Archive</a>
+        <a href="#newsletter">Subscribe</a>
+      </nav>
+    </div>
+  </header>
 
   <div class="container" style="padding: 6rem 5% 4rem;">
     <h1>About Me</h1>
@@ -18,7 +130,9 @@
     <p>For example: After 10+ years in healthcare, I saw the need for practical, no-BS advice on scaling practices and avoiding burnout. This blog/newsletter is my way to share what works.</p>
     <a href="/" class="btn">Back to Home</a>
   </div>
-
-  <!-- Copy the <footer> from index.html here -->
+  
+  <footer>
+    <p>&copy; 2026 Troy Hanson • <a href="https://x.com/ProvidersPlaybk">Follow on X</a> • Built with HTML & Cloudflare</p>
+  </footer>
 </body>
 </html>
