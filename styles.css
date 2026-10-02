@@ -330,6 +330,11 @@ h2 {
   font-weight: 700;
 }
 
+.card .btn {
+  margin-top: 1.15rem;
+  align-self: flex-start;
+}
+
 .closing {
   padding: 3.25rem var(--pad) 3.5rem;
   text-align: center;
