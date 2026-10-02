@@ -2,171 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Providers Playbook | Practical Advice for Household Providers</title>
-  <meta name="description" content="Personal blog and newsletter on being a sole provider for a great family, business strategies, personal growth]. Subscribe for updates.">
-  <style>
-    :root {
-      --primary: #28a745;      /* Blue accent */
-      --text: #333;
-      --light-bg: #f9fbfd;
-      --border: #e0e7ff;
-    }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacOSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background: var(--light-bg);
-    }
-    a { color: var(--primary); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    header {
-      background: white;
-      border-bottom: 1px solid var(--border);
-      padding: 1.5rem 5%;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .nav {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo { font-size: 1.5rem; font-weight: bold; }
-    nav a { margin-left: 1.5rem; font-weight: 500; }
-
-    .hero {
-      text-align: center;
-      padding: 6rem 5% 4rem;
-      background: linear-gradient(to bottom, white, var(--light-bg));
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0 0 1rem;
-    }
-    .hero p {
-      font-size: 1.3rem;
-      max-width: 700px;
-      margin: 0 auto 2rem;
-      color: #555;
-    }
-    .btn {
-      display: inline-block;
-      background: var(--primary);
-      color: white;
-      padding: 0.8rem 1.8rem;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    .btn:hover { background: #0052a3; text-decoration: none; }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 5%;
-    }
-
-    .posts {
-      margin: 4rem 0;
-    }
-    .post-teaser {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-    .post-teaser h2 {
-      margin-top: 0;
-      font-size: 1.8rem;
-    }
-    .date { color: #777; font-size: 0.95rem; }
-
-    .newsletter {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 3rem;
-      text-align: center;
-      margin: 4rem 0;
-    }
-    .newsletter h2 { margin-top: 0; }
-
-    footer {
-      text-align: center;
-      padding: 3rem 5%;
-      background: white;
-      border-top: 1px solid var(--border);
-      color: #666;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2.4rem; }
-      .nav { flex-direction: column; gap: 1rem; }
-      nav a { margin: 0 1rem; }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Providers Playbook</title>
+  <meta name="description" content="Plain-talk mindset, family and decision-making help for dads who carry the load. A newsletter and podcast from Troy Hanson.">
+  <link rel="canonical" href="https://theprovidersplaybook.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Providers Playbook">
+  <meta property="og:title" content="The Providers Playbook">
+  <meta property="og:description" content="Plain-talk mindset, family and decision-making help for dads who carry the load. A newsletter and podcast from Troy Hanson.">
+  <meta property="og:url" content="https://theprovidersplaybook.com/">
+  <meta property="og:image" content="https://theprovidersplaybook.com/assets/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Providers Playbook cover: lightning beside a rainbow over the ocean at sunset with three ships on the horizon">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Providers Playbook">
+  <meta name="twitter:description" content="Plain-talk mindset, family and decision-making help for dads who carry the load.">
+  <meta name="twitter:image" content="https://theprovidersplaybook.com/assets/og.jpg">
+  <meta name="twitter:image:alt" content="The Providers Playbook cover: lightning beside a rainbow over the ocean at sunset with three ships on the horizon">
+  <meta name="theme-color" content="#0b1424">
+  <link rel="preload" href="assets/fonts/Anton-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/hero-1400.jpg" imagesrcset="assets/hero-750.jpg 750w, assets/hero-1400.jpg 1400w" imagesizes="(max-width: 899px) 100vw, 52vw">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#content">Skip to content</a>
 
-  <header>
-    <div class="nav">
-      <div class="logo">The Providers Playbook</div>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/archive.html">Archive</a>
-        <a href="#newsletter">Subscribe</a>
-      </nav>
-    </div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">THE PROVIDERS PLAYBOOK</a>
+    <a class="header-link" href="https://theprovidersplaybook.substack.com/" rel="noopener" target="_blank">Subscribe</a>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to The Providers Playbook</h1>
-    <p>Sharing practical advice, lessons learned, and strategies to grow your household. New posts weekly.</p>
-    <a href="#newsletter" class="btn">Subscribe to the Newsletter</a>
-  </section>
+  <main id="content">
+    <section class="hero">
+      <!-- The photo stays whole. Do not cover it with words, buttons, or a tint. The three ships on the horizon have to stay visible. -->
+      <div class="hero-photo">
+        <img
+          src="assets/hero-1400.jpg"
+          srcset="assets/hero-750.jpg 750w, assets/hero-1400.jpg 1400w"
+          sizes="(max-width: 899px) 100vw, 52vw"
+          width="1400"
+          height="1400"
+          alt="Lightning beside a rainbow over the ocean at sunset with three ships on the horizon"
+          fetchpriority="high"
+          decoding="async">
+      </div>
 
-  <div class="container">
+      <div class="hero-copy">
+        <div class="hero-copy-inner">
+          <!-- Headline. Change this sentence when you're ready. -->
+          <h1>Be the provider they can count on.</h1>
+          <!-- Subhead. Change this sentence when you're ready. -->
+          <p class="lede">Plain-talk mindset, family and decision-making help for dads who carry the load.</p>
 
-    <section class="posts">
-      <h2>Recent Posts</h2>
-
-      <article class="post-teaser">
-        <h2><a href="/posts/first-post.html">Why I'm doing this</a></h2>
-        <p class="date">February 13, 2026</p>
-        <p>A quick intro to what this blog is about, why I started it, and what you can expect moving forward...</p>
-        <a href="/posts/first-post.html">Read more →</a>
-      </article>
-
-      <!-- Add more teasers here as you create posts -->
-      <!-- Example:
-      <article class="post-teaser">
-        <h2><a href="/posts/second-post.html">5 Tips for [Something Relevant]</a></h2>
-        <p class="date">February 20, 2026</p>
-        <p>Short excerpt...</p>
-        <a href="/posts/second-post.html">Read more →</a>
-      </article>
-      -->
+          <div class="cta">
+            <a class="btn btn-primary" href="https://theprovidersplaybook.substack.com/" rel="noopener" target="_blank">Subscribe on Substack</a>
+            <div class="btn-row">
+              <a class="btn btn-secondary" href="https://podcasts.apple.com/us/podcast/providers-playbook-podcast/id6813895208" rel="noopener" target="_blank">Listen on Apple Podcasts</a>
+              <a class="btn btn-secondary" href="https://open.spotify.com/show/1TdtG5r4ATqvkwabUXPg75" rel="noopener" target="_blank">Listen on Spotify</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="newsletter" class="newsletter">
-      <h2>Stay Updated</h2>
-      <p>Join the newsletter for new posts, exclusive tips, and early access to future products/services. No spam—ever.</p>
-      <!-- For now, placeholder. Later we can add real signup (e.g., Mailchimp embed) -->
-      <p><strong>Subscribe form coming soon</strong> – I'll help you add one next if you want.</p>
+    <section class="who" aria-labelledby="whos-troy">
+      <div class="wrap">
+        <!-- DRAFT: Who's Troy. Rewrite these two sentences when you're ready. -->
+        <h2 id="whos-troy">Who's Troy</h2>
+        <p>Troy Hanson is 52, a dad of three, and in sales.</p>
+        <p>He learned the playbook from his grandpa and the school of hard knocks, writes it down every Saturday, and talks it out every Sunday.</p>
+        <p><a class="text-link" href="about.html">Read the full story</a></p>
+      </div>
     </section>
 
-  </div>
+    <section class="latest" aria-labelledby="latest-heading">
+      <div class="wrap">
+        <h2 id="latest-heading">Latest from the Playbook</h2>
+        <div class="cards">
+          <!-- PLACEHOLDER: Saturday post. Replace the title, the blurb, and the link with this week's Substack post. -->
+          <a class="card" href="https://theprovidersplaybook.substack.com/" rel="noopener" target="_blank">
+            <p class="kicker">Saturday post</p>
+            <h3>This Saturday's note</h3>
+            <p>A plain-talk note for the week. Replace this sentence with what the post is actually about.</p>
+            <span class="card-go">Read on Substack</span>
+          </a>
+          <!-- PLACEHOLDER: Sunday episode. Replace the title, the blurb, and the link with this week's episode. -->
+          <a class="card" href="https://podcasts.apple.com/us/podcast/providers-playbook-podcast/id6813895208" rel="noopener" target="_blank">
+            <p class="kicker">Sunday episode</p>
+            <h3>This Sunday's episode</h3>
+            <p>Troy talks it out. Replace this sentence with what this week's episode is about.</p>
+            <span class="card-go">Listen on Apple Podcasts</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2026 Troy Hanson • <a href="https://x.com/ProvidersPlaybk">Follow on X</a> • Built with HTML & Cloudflare</p>
+    <section class="closing" aria-label="Subscribe">
+      <a class="btn btn-primary" href="https://theprovidersplaybook.substack.com/" rel="noopener" target="_blank">Subscribe on Substack</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="https://x.com/ProvidersPlaybk" rel="noopener" target="_blank">Follow on X</a></li>
+      <li><a href="https://theprovidersplaybook.substack.com/" rel="noopener" target="_blank">Substack</a></li>
+      <li><a href="https://podcasts.apple.com/us/podcast/providers-playbook-podcast/id6813895208" rel="noopener" target="_blank">Apple Podcasts</a></li>
+      <li><a href="https://open.spotify.com/show/1TdtG5r4ATqvkwabUXPg75" rel="noopener" target="_blank">Spotify</a></li>
+    </ul>
+    <p class="copyright">&copy; 2026 Troy Hanson</p>
   </footer>
-
 </body>
 </html>
