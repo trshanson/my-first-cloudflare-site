@@ -262,6 +262,17 @@ h2 {
   font-size: 1.125rem;
 }
 
+/* About page cover. Shown whole. Do not crop it or cover the ships. */
+.about-photo {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  object-fit: contain;
+  object-position: center center;
+  border-radius: 10px;
+  background: var(--bg);
+}
+
 .text-link {
   display: inline-block;
   margin-top: 0.35rem;
