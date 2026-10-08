@@ -1,0 +1,3 @@
+# Short link. /subscribe and /subscribe/ go to the Substack signup page.
+/subscribe https://theprovidersplaybook.substack.com/subscribe?utm_source=website&utm_medium=referral&utm_campaign=short-link-subscribe 302
+/subscribe/ https://theprovidersplaybook.substack.com/subscribe?utm_source=website&utm_medium=referral&utm_campaign=short-link-subscribe 302
