@@ -2,137 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | The Providers Playbook</title>
-  <style>
-    :root {
-      --primary: #28a745;      /* Blue accent */
-      --text: #333;
-      --light-bg: #f9fbfd;
-      --border: #e0e7ff;
-    }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacOSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background: var(--light-bg);
-    }
-    a { color: var(--primary); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    header {
-      background: white;
-      border-bottom: 1px solid var(--border);
-      padding: 1.5rem 5%;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .nav {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo { font-size: 1.5rem; font-weight: bold; }
-    nav a { margin-left: 1.5rem; font-weight: 500; }
-
-    .hero {
-      text-align: center;
-      padding: 6rem 5% 4rem;
-      background: linear-gradient(to bottom, white, var(--light-bg));
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0 0 1rem;
-    }
-    .hero p {
-      font-size: 1.3rem;
-      max-width: 700px;
-      margin: 0 auto 2rem;
-      color: #555;
-    }
-    .btn {
-      display: inline-block;
-      background: var(--primary);
-      color: white;
-      padding: 0.8rem 1.8rem;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    .btn:hover { background: #0052a3; text-decoration: none; }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 5%;
-    }
-
-    .posts {
-      margin: 4rem 0;
-    }
-    .post-teaser {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-    .post-teaser h2 {
-      margin-top: 0;
-      font-size: 1.8rem;
-    }
-    .date { color: #777; font-size: 0.95rem; }
-
-    .newsletter {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 3rem;
-      text-align: center;
-      margin: 4rem 0;
-    }
-    .newsletter h2 { margin-top: 0; }
-
-    footer {
-      text-align: center;
-      padding: 3rem 5%;
-      background: white;
-      border-top: 1px solid var(--border);
-      color: #666;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2.4rem; }
-      .nav { flex-direction: column; gap: 1rem; }
-      nav a { margin: 0 1rem; }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About The Providers Playbook</title>
+  <meta name="description" content="Troy Hanson on starting The Providers Playbook, providing for his family, and the photo of lightning, a rainbow, and three ships.">
+  <link rel="canonical" href="https://theprovidersplaybook.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Providers Playbook">
+  <meta property="og:title" content="About The Providers Playbook">
+  <meta property="og:description" content="Troy Hanson on starting The Providers Playbook, providing for his family, and the photo of lightning, a rainbow, and three ships.">
+  <meta property="og:url" content="https://theprovidersplaybook.com/about.html">
+  <meta property="og:image" content="https://theprovidersplaybook.com/assets/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Providers Playbook cover: lightning beside a rainbow over the ocean at sunset with three ships on the horizon">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About The Providers Playbook">
+  <meta name="twitter:description" content="Troy Hanson on starting The Providers Playbook, providing for his family, and the photo of lightning, a rainbow, and three ships.">
+  <meta name="twitter:image" content="https://theprovidersplaybook.com/assets/og.jpg">
+  <meta name="twitter:image:alt" content="The Providers Playbook cover: lightning beside a rainbow over the ocean at sunset with three ships on the horizon">
+  <meta name="theme-color" content="#0b1424">
+  <link rel="preload" href="assets/fonts/Anton-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="nav">
-      <div class="logo">The Providers Playbook</div>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/archive.html">Archive</a>
-        <a href="#newsletter">Subscribe</a>
-      </nav>
-    </div>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html">THE PROVIDERS PLAYBOOK</a>
+    <nav class="header-nav" aria-label="Main">
+      <a class="header-link" href="start-here.html">Start here</a>
+      <a class="header-link" href="podcast.html">Podcast</a>
+      <a class="header-link" href="https://theprovidersplaybook.substack.com/" rel="noopener" target="_blank">Subscribe</a>
+    </nav>
   </header>
 
-  <div class="container" style="padding: 6rem 5% 4rem;">
-    <h1>About Me</h1>
-    <p>Hi, I'm Troy Hanson. [Write 3-5 paragraphs about yourself: background, why you started this, what readers get, future plans like business offerings.]</p>
-    <p>For example: After 10+ years in healthcare, I saw the need for practical, no-BS advice on scaling practices and avoiding burnout. This blog/newsletter is my way to share what works.</p>
-    <a href="/" class="btn">Back to Home</a>
-  </div>
-  
-  <footer>
-    <p>&copy; 2026 Troy Hanson • <a href="https://x.com/ProvidersPlaybk">Follow on X</a> • Built with HTML & Cloudflare</p>
+  <main id="content">
+    <section class="page-intro who">
+      <div class="wrap">
+        <h1>About The Providers Playbook</h1>
+        <p>My mother passed in late 2025. Watching the end of her life, I asked myself one question: "What are you afraid of?"</p>
+        <p>The honest answer was that I was only afraid of starting. So I started. I launched The Providers Playbook on Substack and got this website soon after.</p>
+        <p>I'm the sole financial provider for my wife and our three kids. That was a choice we made together. My wife was, and still is, a great salesperson, but she decided to make raising our family her life's work. Most of what I write comes from carrying that role: the decisions, the pressure, the wins, and the lessons I pick up along the way.</p>
+        <p>I'm curious by nature, so now and then I'll write about something else that grabs me. It's all in the playbook.</p>
+        <p><strong>About that photo.</strong> It's 100% real, and my wife took it on a family vacation. The lightning is the energy I bring to my family, my life, and providing, and it reminds me that storms will come. The rainbow is the promise I made to my family to provide the best I can. The three ships are my three kids. When I saw it, I figured the universe was pushing me in this direction.</p>
+        <p>If you're a provider, I hope something here helps you, and I'd love to hear what you've learned too. If you know a provider who could use this, send it their way.</p>
+        <p>Let's get ready to give our best.</p>
+      </div>
+    </section>
+
+    <section class="closing" aria-label="Subscribe">
+      <a class="btn btn-primary" href="https://theprovidersplaybook.substack.com/subscribe" rel="noopener" target="_blank">Subscribe on Substack</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="https://x.com/ProvidersPlaybk" rel="noopener" target="_blank">Follow on X</a></li>
+      <li><a href="https://theprovidersplaybook.substack.com/" rel="noopener" target="_blank">Substack</a></li>
+      <li><a href="https://podcasts.apple.com/us/podcast/providers-playbook-podcast/id6813895208" rel="noopener" target="_blank">Apple Podcasts</a></li>
+      <li><a href="https://open.spotify.com/show/1TdtG5r4ATqvkwabUXPg75" rel="noopener" target="_blank">Spotify</a></li>
+    </ul>
+    <p class="copyright">&copy; 2026 Troy Hanson</p>
   </footer>
 </body>
 </html>
