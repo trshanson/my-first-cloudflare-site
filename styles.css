@@ -626,6 +626,13 @@ h2 {
     gap: 1.25rem;
   }
 
+  /* Five sayings: keep the last card the same size and center it. */
+  .quotes .quote:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 0.625rem);
+  }
+
   .page-intro {
     padding-top: 4.5rem;
   }
