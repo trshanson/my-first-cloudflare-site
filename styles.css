@@ -612,11 +612,22 @@ h2 {
   }
 
   .header-link {
-    font-size: 0.9rem;
+    font-size: 0.84rem;
   }
 
   .header-nav {
-    gap: 0.7rem;
+    gap: 0.4rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .header-link {
+    font-size: 0.75rem;
+    padding-inline: 0;
+  }
+
+  .header-nav {
+    gap: 0.25rem;
   }
 }
 
@@ -640,6 +651,206 @@ h2 {
   .sayings,
   .best {
     padding-top: 4.25rem;
+  }
+}
+
+/* The Silent Winners. Coming-soon landing, sample profile, and home teaser. */
+.sw-how,
+.sw-soon,
+.sw-nominate,
+.sw-profile {
+  padding: 3rem 0 0.5rem;
+}
+
+.sw-how .wrap,
+.sw-nominate .wrap,
+.sw-profile .wrap {
+  width: min(100% - (var(--pad) * 2), 40rem);
+}
+
+.sw-soon .wrap {
+  width: min(100% - (var(--pad) * 2), 66rem);
+}
+
+.sw-how p,
+.sw-nominate p,
+.sw-profile > .wrap > p {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+}
+
+.sw-how h2,
+.sw-soon h2,
+.sw-nominate h2,
+.sw-profile h2 {
+  margin-bottom: 0.35rem;
+}
+
+.sw-nominate .btn-primary {
+  width: min(100%, 22rem);
+  margin-top: 1.25rem;
+}
+
+.sw-start {
+  margin-top: 1.15rem;
+}
+
+.winner-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.35rem;
+}
+
+.winner-slot {
+  min-height: 9.5rem;
+  border: 1px dashed rgba(168, 155, 184, 0.55);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  color: var(--soft);
+  text-align: center;
+  background: transparent;
+}
+
+.winner-card {
+  display: block;
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--coral);
+  border-radius: 10px;
+  overflow: hidden;
+  color: var(--body);
+  text-decoration: none;
+}
+
+.winner-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.winner-card h3 {
+  margin: 0.45rem 0 0.55rem;
+  color: var(--ink);
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.winner-body {
+  padding: 1.15rem 1.2rem 1.25rem;
+}
+
+.winner-photo {
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  border: 1px dashed rgba(168, 155, 184, 0.7);
+  border-radius: 10px;
+  background: var(--raised);
+  color: var(--soft);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sw-profile .winner-photo {
+  margin-bottom: 1.35rem;
+}
+
+.sw-profile > .wrap > p.kicker {
+  margin-top: 0;
+  font-size: 0.82rem;
+}
+
+.sw-profile h1 {
+  font-size: clamp(2.4rem, 7vw, 3.6rem);
+  margin-top: 0.4rem;
+}
+
+.sw-profile > .wrap > p.winner-place,
+.sw-profile > .wrap > p.winner-years {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.sw-profile > .wrap > p.permission {
+  margin-top: 1.35rem;
+  color: var(--soft);
+  font-size: 0.95rem;
+}
+
+.sw-profile .quote {
+  margin-top: 1rem;
+}
+
+.lesson {
+  margin-top: 1.75rem;
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--coral);
+  border-radius: 10px;
+  padding: 1.35rem 1.25rem 1.3rem;
+}
+
+.lesson p {
+  margin-top: 0.85rem;
+}
+
+.permission {
+  margin-top: 1.25rem;
+  color: var(--soft);
+  font-size: 0.95rem;
+}
+
+.sample-banner {
+  margin: 0;
+  background: var(--coral);
+  color: var(--bg);
+  font-weight: 800;
+  text-align: center;
+  padding: 0.7rem var(--pad);
+  letter-spacing: 0.01em;
+}
+
+.winners-teaser {
+  padding: 3.25rem 0 1rem;
+}
+
+.winners-teaser h2 {
+  margin-bottom: 0.85rem;
+}
+
+.winners-teaser > .wrap > p {
+  font-size: 1.125rem;
+  max-width: 36rem;
+}
+
+.winners-teaser .btn-primary {
+  width: min(100%, 22rem);
+  margin-top: 1.25rem;
+}
+
+.winners-teaser .quote {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .winner-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .sw-how,
+  .sw-soon,
+  .sw-nominate,
+  .sw-profile {
+    padding-top: 4.25rem;
+  }
+
+  .winners-teaser {
+    padding-top: 5.5rem;
   }
 }
 
