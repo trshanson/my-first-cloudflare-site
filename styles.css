@@ -626,7 +626,7 @@ h2 {
     gap: 1.25rem;
   }
 
-  /* Five sayings: keep the last card the same size and center it. */
+  /* Any odd count: keep the last card the same size and center it. */
   .quotes .quote:last-child:nth-child(odd) {
     grid-column: 1 / -1;
     justify-self: center;
