@@ -643,6 +643,33 @@ h2 {
   }
 }
 
+/* Start here: subscribe block under the intro. */
+.start-subscribe {
+  margin-top: 1.6rem;
+}
+
+.start-subscribe > p:first-child {
+  font-size: 1.125rem;
+  line-height: 1.45;
+  max-width: 42rem;
+}
+
+.start-subscribe .btn-primary {
+  width: min(100%, 22rem);
+  margin-top: 1rem;
+}
+
+.start-alt {
+  margin-top: 0.9rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.start-alt a {
+  font-weight: 700;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
